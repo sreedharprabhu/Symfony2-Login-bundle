@@ -1,0 +1,71 @@
+login_login_homepage:
+    pattern:  /login
+    defaults: { _controller: LoginLoginBundle:Default:index }
+
+login_login_signup:
+    pattern:  /signup
+    defaults: { _controller: LoginLoginBundle:Default:signup }
+    
+login_login_logout:
+    pattern:  /logout
+    defaults: { _controller: LoginLoginBundle:Default:logout }
+    
+login_login_uos:
+    pattern:  /uos
+    defaults: { _controller: LoginLoginBundle:Default:uos }
+
+login_login_home:
+    pattern:  /home
+    defaults: { _controller: LoginLoginBundle:Default:home }
+    
+login_login_addstudent:
+    pattern:  /addstudent 
+    defaults: { _controller: LoginLoginBundle:Default:addstudent }
+    
+login_login_halladd:
+    pattern:  /halladd 
+    defaults: { _controller: LoginLoginBundle:Default:halladd }
+    
+login_login_halledit:
+    pattern:  /halledit 
+    defaults: { _controller: LoginLoginBundle:Default:halledit }    
+
+login_login_halleditf:
+    pattern:  /halleditf 
+    defaults: { _controller: LoginLoginBundle:Default:halleditf }
+
+login_login_halldelete:
+    pattern:  /halldelete
+    defaults: { _controller: LoginLoginBundle:Default:halldelete }
+
+login_login_roomedit:
+    pattern:  /roomedit 
+    defaults: { _controller: LoginLoginBundle:Default:roomedit }
+    
+login_login_roomadd:
+    pattern:  /roomadd 
+    defaults: { _controller: LoginLoginBundle:Default:roomadd }
+
+login_login_roomeditf:
+    pattern:  /roomeditf 
+    defaults: { _controller: LoginLoginBundle:Default:roomeditf }
+    
+login_login_occupyAdd:
+    pattern:  /occupyAdd
+    defaults: { _controller: LoginLoginBundle:Default:occupyAdd }
+
+login_login_roomdelete:
+    pattern:  /roomdelete
+    defaults: { _controller: LoginLoginBundle:Default:roomdelete }
+    
+login_login_occupyedit:
+    pattern:  /occupyedit
+    defaults: { _controller: LoginLoginBundle:Default:occupyedit }
+    
+login_login_occupyeditf:
+    pattern:  /occupyeditf
+    defaults: { _controller: LoginLoginBundle:Default:occupyeditf }
+    
+login_login_occupydelete:
+    pattern:  /occupydelete
+    defaults: { _controller: LoginLoginBundle:Default:occupydelete }

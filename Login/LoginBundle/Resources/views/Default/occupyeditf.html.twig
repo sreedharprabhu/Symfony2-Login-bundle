@@ -1,0 +1,47 @@
+{%extends "LoginLoginBundle:Default:welcome.html.twig"%}
+
+{%block container %}
+
+<div class="span10">
+            <div class="containerHome" >
+    <form id="form" class="well" method="POST" action="{{path('login_login_occupyeditf')}}" data-validate="parsley">
+        <h2>Change Room Accomodation</h2>
+        <label>Student Number</label>
+        <input type="text" name="studentno" class="input-xlarge" data-trigger="change" data-required="true" placeholder="{{studno}}" disabled>
+        <label>Hall Name</label>
+        <input type="text" name="hallname" class="input-xlarge" data-trigger="change" data-required="true" data-equalto="#username" placeholder="{{hallname}}">
+        <label>Room Number</label>
+        <input type="text" name="roomno" class="input-xlarge" data-trigger="change" data-required="true" data-equalto="#username" placeholder="{{roomno}}">
+        <input type="hidden" name="indnum" value="{{indnum}}">
+        <variable name="inddnum" value="{{indnum}}">
+        <div>
+            <button class="btn btn-primary" type="submit">Change</button>
+        </div>
+
+    </form>
+</div>
+      </div><!--/row-->
+      
+      {%endblock%}
+      
+      {%block sideMenu %}
+
+<ul class="nav nav-list">
+                <li class="nav-header"><b>Home</b></li>
+              <li class="active"><a href="{{ path('login_login_home')}}">Welcome</a></li>
+              <li><a href="{{ path('login_login_addstudent')}}">Add</a></li>
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+              <li class="nav-header">Sidebar</li>
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+              <li class="nav-header">Hall Hall Hall</li>
+              <li><a href="{{ path('login_login_halladd')}}">Add Hall</a></li>
+              <li><a href="{{ path('login_login_halledit')}}">Edit Hall</a></li>
+              <li><a href="{{ path('login_login_halldelete')}}">Delete Hall</a></li>              
+            </ul>
+{%endblock%}
